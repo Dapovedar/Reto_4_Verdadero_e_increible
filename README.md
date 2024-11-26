@@ -8,13 +8,13 @@ Plantear el algoritmo para obtener los números primos hasta n, usando pseudocó
 ```
 [variables]
 n : entero
-i : entero
+i : 2
 inicio
   Mientras (i<=n) hacer
-    Si modulo(i,2 hasta i/2) == 0 entonces
-      escribir("i es un número no primo")
-    sino
+    Si modulo(i,2 hasta i/2) != 0 o i es 2 entonces
       guardar i en lista de primos
+    sino
+      descartar número
     i=i+1
    escribir(lista de primos)
   
